@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.*;
@@ -18,7 +20,7 @@ public class CreateResource {
 	private WebDriver driver;
 	private String baseUrl;
 	private WebElement resourceCreated;
-	@BeforeTest
+	@BeforeClass
 	public void setUp() throws Exception {
 		String username = "Maria";
 		String password = "Control123";
@@ -33,7 +35,7 @@ public class CreateResource {
 	    driver.findElement(By.id("loginPassword")).sendKeys(password);
 	    driver.findElement(By.xpath("//button[@type='submit']")).click();
 	  }
-	@AfterTest
+	@AfterClass
 	 public void tearDown() throws Exception {
 	    resourceCreated.findElement(By.xpath("div[1]")).click();
 		driver.findElement(By.id("btnRemove")).click();

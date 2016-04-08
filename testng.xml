@@ -4,6 +4,7 @@
   <test name="Room Manager tests">
     <classes>
       <class name="fundacion.jala.CreateResource" />
+      <class name="fundacion.jala.CreateLocation" />
     </classes>
   </test>
 </suite>

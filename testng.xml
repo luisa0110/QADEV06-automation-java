@@ -5,6 +5,9 @@
     <classes>
       <class name="fundacion.jala.CreateResource" />
       <class name="fundacion.jala.CreateLocation" />
+      <class name="fundacion.jala.Login" />
+      <class name="fundacion.jala.CreateMeeting" />
+      <class name="fundacion.jala.SetOutOfOrderRoom" />
     </classes>
   </test>
 </suite>
